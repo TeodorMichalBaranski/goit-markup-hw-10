@@ -25,6 +25,26 @@
       <div class="page-wrapper navigation">
         <nav class="navigation__wrapper">
           <div class="logo"><span class="logo-web">Web</span>Studio</div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
           <ul class="navigation__links">
             <li><a class="navigation__item navigation-position" href="index.html">Agencja</a></li>
             <li><a class="navigation__item" href="portfolio.html">Portfolio</a></li>
@@ -49,7 +69,7 @@
         </div>
       </div>
     </section>
-    <!-- <main>
+    <main>
       <section class="billboard">
         <div class="billboard__text">
           <p>EFEKTYWNE ROZWIĄZANIA</p>
@@ -61,7 +81,7 @@
         <ul class="article">
           <li>
             <div>
-              <svg width="270" height="120" class="article__icon">
+              <svg width="100%" height="120" class="article__icon">
                 <use href="./images/icons.svg#icon-antenna" height="70" y="25"></use>
               </svg>
               <h3 class="article__header">LOREM IPSUM</h3>
@@ -73,7 +93,7 @@
           </li>
           <li>
             <div>
-              <svg width="270" height="120" class="article__icon">
+              <svg width="100%" height="120" class="article__icon">
                 <use href="./images/icons.svg#icon-clock" height="70" y="25"></use>
               </svg>
               <h3 class="article__header">LOREM IPSUM</h3>
@@ -85,7 +105,7 @@
           </li>
           <li>
             <div>
-              <svg width="270" height="120" class="article__icon">
+              <svg width="100%" height="120" class="article__icon">
                 <use href="./images/icons.svg#icon-diagram" height="70" y="25"></use>
               </svg>
               <h3 class="article__header">LOREM IPSUM</h3>
@@ -97,7 +117,7 @@
           </li>
           <li>
             <div>
-              <svg width="270" height="120" class="article__icon">
+              <svg width="100%" height="120" class="article__icon">
                 <use href="./images/icons.svg#icon-astronaut" height="70" y="25"></use>
               </svg>
               <h3 class="article__header">LOREM IPSUM</h3>
@@ -110,7 +130,7 @@
         </ul>
       </article>
       <section class="page-wrapper">
-        <h2 class="header-title">Czym się zajmujemy</h2>
+        <h2 class="header-title services__hidden">Czym się zajmujemy</h2>
         <ul class="services">
           <li class="services__item">
             <img src="images/service/computer.jpg" alt="Ktoś pisze na kompuetrze" width="370" />
@@ -142,7 +162,7 @@
               <figure class="team__img">
                 <img
                   src="images/team/productDesigner.jpg"
-                  width="270"
+                  width="100%"
                   alt="Mężczyzna z brodą, w okularach i brązowej koszuli"
                 />
                 <figcaption>
@@ -177,7 +197,7 @@
               <figure class="team__img">
                 <img
                   src="images/team/frontendDeveloper.jpg"
-                  width="270"
+                  width="100%"
                   alt="Kobieta, bolndynka, w okularach i marynarce"
                 />
                 <figcaption>
@@ -212,7 +232,7 @@
               <figure class="team__img">
                 <img
                   src="images/team/marketing.jpg"
-                  width="270"
+                  width="100%"
                   alt="Mężczyzna w jasnej koszuli z zarostem"
                 />
                 <figcaption>
@@ -247,7 +267,7 @@
               <figure class="team__img">
                 <img
                   src="images/team/secoundFrontendDeveloper.jpg"
-                  width="270"
+                  width="100%"
                   alt="Mężczyzna z brodą, w okularach i czarnej koszulce"
                 />
                 <figcaption>
@@ -318,14 +338,14 @@
           </div>
         </div>
       </section>
-    </main> -->
-    <!-- <footer class="footer-background">
+    </main>
+    <footer class="footer-background">
       <div class="page-wrapper--footer">
         <div class="footer">
           <div class="footer__contacts">
-            <p class="logo">
+            <div class="logo">
               <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
-            </p>
+            </div>
             <address class="footer__wrapper">
               <p class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</p>
               <a class="footer__address--contact" href="mailto:info@devstudio.com">
@@ -382,8 +402,8 @@
           </div>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="is-hidden backdrop" data-modal>
+    </footer>
+    <div class="is-hidden backdrop" data-modal>
       <div class="modal">
         <button class="modal__close" data-modal-close>&times;</button>
         <div>
@@ -462,6 +482,39 @@
         </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
