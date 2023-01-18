@@ -17,9 +17,25 @@ a {
 
 .page-wrapper {
   max-width: 1600px;
-  margin: 25px auto;
-  padding: 0 215px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
+
+// @media (min-width: $tablet-size) {
+//   .page-wrapper {
+//     max-width: 1600px;
+//     margin: 25px auto;
+//     padding: 0 215px;
+//   }
+// }
+
+// @media (min-width: $desktop-size) {
+//   .page-wrapper {
+//     max-width: 1600px;
+//     margin: 25px auto;
+//     padding: 0 215px;
+//   }
+// }
 
 .header-title {
   font-size: 2.25rem;
