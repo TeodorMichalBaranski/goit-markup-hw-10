@@ -76,19 +76,28 @@ a {
 .navigation__icon-contact {
   fill: rgb(117, 117, 117);
 }
-.navigation__item:hover, .navigation__item:focus, .navigation__item--contact:hover, .navigation__item--contact:focus, .navigation__wrapper:hover .navigation__icon-contact, .navigation__wrapper:focus .navigation__icon-contact, .navigation__wrapper:hover .navigation__item--contact, .navigation__wrapper:focus .navigation__item--contact {
+.navigation__item:hover,
+.navigation__item:focus,
+.navigation__item--contact:hover,
+.navigation__item--contact:focus,
+.navigation__wrapper:hover .navigation__icon-contact,
+.navigation__wrapper:focus .navigation__icon-contact,
+.navigation__wrapper:hover .navigation__item--contact,
+.navigation__wrapper:focus .navigation__item--contact {
   color: rgb(33, 150, 243);
   transition: 250ms;
   fill: rgb(33, 150, 243);
 }
-.navigation__icon-contact:hover, .navigation__icon-contact:focus {
+.navigation__icon-contact:hover,
+.navigation__icon-contact:focus {
   transition: 250ms;
 }
 
 .navigation-position {
   position: relative;
 }
-.navigation-position:hover::after, .navigation-position:focus::after {
+.navigation-position:hover::after,
+.navigation-position:focus::after {
   content: "";
   height: 4px;
   width: 53px;
@@ -117,7 +126,8 @@ a {
 }
 
 .billboard {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundTeam.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/backgroundTeam.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
@@ -154,10 +164,12 @@ a {
   color: rgb(255, 255, 255);
   padding: 0;
 }
-.billboard__button:hover, .billboard__button:focus {
+.billboard__button:hover,
+.billboard__button:focus {
   transition: 250ms;
 }
-.billboard__button:hover, .billboard__button:focus {
+.billboard__button:hover,
+.billboard__button:focus {
   background-color: rgb(245, 244, 250);
   color: rgb(33, 33, 33);
   cursor: pointer;
@@ -233,7 +245,8 @@ a {
 .team__img {
   padding: 0 0 30px 0;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team__person {
@@ -270,7 +283,8 @@ a {
 .icon-social__background {
   fill: rgba(255, 255, 255, 0.1);
 }
-.icon-social__item:hover, .icon-social__item:focus {
+.icon-social__item:hover,
+.icon-social__item:focus {
   cursor: pointer;
   fill: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
@@ -293,7 +307,8 @@ a {
   border-width: 1px;
   border-radius: 4px;
 }
-.company__wrapper:hover, .company__wrapper:focus {
+.company__wrapper:hover,
+.company__wrapper:focus {
   border-color: rgb(33, 150, 243);
   transition: 250ms;
 }
@@ -304,7 +319,8 @@ a {
   padding: 0;
   vertical-align: middle;
 }
-.icon__company:hover, .icon__company:focus {
+.icon__company:hover,
+.icon__company:focus {
   cursor: pointer;
   fill: rgb(33, 150, 243);
   transition: 250ms;
@@ -383,7 +399,10 @@ a {
 .footer__newsletter .footer__header {
   margin-bottom: 20px;
 }
-.footer__address:hover, .footer__address:focus, .footer__address--contact:hover, .footer__address--contact:focus {
+.footer__address:hover,
+.footer__address:focus,
+.footer__address--contact:hover,
+.footer__address--contact:focus {
   color: rgb(33, 150, 243);
 }
 
@@ -444,13 +463,15 @@ a {
 .newsletter__button:hover .newsletter__button--color {
   fill: rgb(33, 33, 33);
 }
-.newsletter__button:focus, .newsletter__button:hover {
+.newsletter__button:focus,
+.newsletter__button:hover {
   transition: 250ms;
   background-color: rgb(245, 244, 250);
   color: rgb(33, 33, 33);
   cursor: pointer;
 }
-.newsletter__input:focus, .newsletter__input:hover {
+.newsletter__input:focus,
+.newsletter__input:hover {
   border-color: rgb(33, 150, 243);
 }
 
@@ -482,7 +503,8 @@ a {
   position: relative;
   cursor: initial;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .modal__close {
@@ -499,7 +521,8 @@ a {
   font-size: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close:hover {
   cursor: pointer;
@@ -532,7 +555,8 @@ a {
   width: 100%;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
 }
-.modal__input:hover, .modal__input:focus {
+.modal__input:hover,
+.modal__input:focus {
   transition: 250ms;
 }
 .modal__textarea::-moz-placeholder {
@@ -587,7 +611,8 @@ a {
   display: flex;
   justify-content: center;
 }
-.modal__submit-button:hover, .modal__submit-button:focus {
+.modal__submit-button:hover,
+.modal__submit-button:focus {
   background-color: rgb(245, 244, 250);
   color: rgb(33, 33, 33);
   cursor: pointer;
@@ -600,7 +625,12 @@ a {
   letter-spacing: 0.03em;
   margin: 40px 0 12px 0;
 }
-.modal__input:hover, .modal__input:focus, .modal__textarea:hover, .modal__textarea:focus, .modal__input:focus + .modal-icons, .modal__input:hover + .modal-icons {
+.modal__input:hover,
+.modal__input:focus,
+.modal__textarea:hover,
+.modal__textarea:focus,
+.modal__input:focus + .modal-icons,
+.modal__input:hover + .modal-icons {
   border-color: rgb(33, 150, 243);
   transition: 250ms;
   fill: rgb(33, 150, 243);
@@ -641,8 +671,8 @@ a {
 }
 .modal-checkbox__label input {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 16px;
   height: 15px;
   border: 2px solid black;
@@ -674,7 +704,8 @@ a {
   margin: 0 8px;
   padding: 6px 22px;
 }
-.portfolio-buttons__item:hover, .portfolio-buttons__item:focus {
+.portfolio-buttons__item:hover,
+.portfolio-buttons__item:focus {
   background-color: rgb(33, 150, 243);
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -744,4 +775,4 @@ a {
   transform: translateY(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
