@@ -28,102 +28,96 @@
   }
 }
 
-.navigation-position {
-  position: relative;
+@media (min-width: $tablet-size) {
+  .menu-toggle,
+  .js-opne,
+  .mobile__icon-menu,
+  .menu-container {
+    display: none;
+  }
 
-  // &:hover::after,
-  // &:focus::after {
-  //   content: "";
-  //   height: 4px;
-  //   width: 53px;
-  //   background-color: $brand-blue;
-  //   position: absolute;
-  //   border-radius: 2px;
-  //   left: 0;
-  //   top: 45px;
-  // }
+  .navigation {
+  }
 }
 
-// @media (min-width: $tablet-size);
+@media (min-width: $desktop-size) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-// CSS FOR 1200 PX
+    &__wrapper {
+      justify-items: center;
+      display: flex;
+      align-items: center;
+    }
 
-// .navigation {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
+    &__links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 261px;
+    }
 
-//   &__wrapper {
-//     justify-items: center;
-//     display: flex;
-//     align-items: center;
-//   }
+    &__contacts {
+      justify-items: center;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
 
-//   &__links {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     width: 261px;
-//   }
+    &__item {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.17;
+      color: $brand-black;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
 
-//   &__contacts {
-//     justify-items: center;
-//     display: flex;
-//     align-items: center;
-//     gap: 30px;
-//   }
+    &__item--contact {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: $brand-grey;
+    }
 
-//   &__item {
-//     font-size: 0.875rem;
-//     font-weight: 500;
-//     line-height: 1.17;
-//     color: $brand-black;
-//     letter-spacing: 0.02em;
-//     text-decoration: none;
-//   }
+    &__icon-contact {
+      fill: $brand-grey;
+    }
+    &__item:hover,
+    &__item:focus,
+    &__item--contact:hover,
+    &__item--contact:focus,
+    &__wrapper:hover .navigation__icon-contact,
+    &__wrapper:focus .navigation__icon-contact,
+    &__wrapper:hover .navigation__item--contact,
+    &__wrapper:focus .navigation__item--contact {
+      color: $brand-blue;
+      transition: 250ms;
+      fill: $brand-blue;
+    }
+    &__icon-contact:hover,
+    &__icon-contact:focus {
+      transition: 250ms;
+    }
+  }
 
-//   &__item--contact {
-//     font-size: 0.875rem;
-//     font-weight: 500;
-//     line-height: 1.17;
-//     letter-spacing: 0.02em;
-//     text-decoration: none;
-//     color: $brand-grey;
-//   }
+  .navigation-position {
+    position: relative;
 
-//   &__icon-contact {
-//     fill: $brand-grey;
-//   }
-//   &__item:hover,
-//   &__item:focus,
-//   &__item--contact:hover,
-//   &__item--contact:focus,
-//   &__wrapper:hover .navigation__icon-contact,
-//   &__wrapper:focus .navigation__icon-contact,
-//   &__wrapper:hover .navigation__item--contact,
-//   &__wrapper:focus .navigation__item--contact {
-//     color: $brand-blue;
-//     transition: 250ms;
-//     fill: $brand-blue;
-//   }
-//   &__icon-contact:hover,
-//   &__icon-contact:focus {
-//     transition: 250ms;
-//   }
-// }
-
-// .navigation-position {
-//   position: relative;
-
-//   &:hover::after,
-//   &:focus::after {
-//     content: "";
-//     height: 4px;
-//     width: 53px;
-//     background-color: $brand-blue;
-//     position: absolute;
-//     border-radius: 2px;
-//     left: 0;
-//     top: 45px;
-//   }
-// }
+    &:hover::after,
+    &:focus::after {
+      content: "";
+      height: 4px;
+      width: 53px;
+      background-color: $brand-blue;
+      position: absolute;
+      border-radius: 2px;
+      left: 0;
+      top: 45px;
+    }
+  }
+}
