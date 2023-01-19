@@ -30,18 +30,11 @@ a {
   margin: 0 0 30px 0;
 }
 
-// @media (min-width: $tablet-size) {
-//   .page-wrapper {
-//     max-width: 1600px;
-//     margin: 25px auto;
-//     padding: 0 215px;
-//   }
-// }
-
-// @media (min-width: $desktop-size) {
-//   .page-wrapper {
-//     max-width: 1600px;
-//     margin: 25px auto;
-//     padding: 0 215px;
-//   }
-// }
+@media (min-width: 1200px) {
+  .page-wrapper {
+    max-width: 1600px;
+    margin: 25px auto;
+    padding: 0 215px;
+    // background-color: crimson;
+  }
+}

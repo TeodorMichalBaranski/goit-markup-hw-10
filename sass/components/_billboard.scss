@@ -54,6 +54,13 @@
   }
 }
 
+@media (min-width: $desktop-size) {
+  .billboard {
+    max-width: 1600px;
+    margin-bottom: 94px;
+  }
+}
+
 // 1200 PX
 
 // .billboard {

@@ -1,9 +1,7 @@
 .article {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  // justify-items: center;
   gap: 30px;
   margin-bottom: 60px;
 
@@ -29,6 +27,30 @@
     background-color: rgb(245, 244, 250);
     border-radius: 4px;
     margin-top: 94p;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+
+    &__header {
+      text-align: left;
+    }
+
+    &__wrapper {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .article {
+    margin-bottom: 94px;
+    flex-wrap: nowrap;
   }
 }
 

@@ -8,7 +8,6 @@
   display: flex;
   gap: 30px;
   flex-direction: column;
-  width: 100%;
 
   &__img {
     padding: 0 0 30px 0;
@@ -39,6 +38,27 @@
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__wrapper {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-background {
+    padding: 94px 0;
+  }
+  .team {
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 

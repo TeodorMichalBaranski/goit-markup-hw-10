@@ -13,6 +13,7 @@
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
+
     flex-basis: calc((100% - 30px) / 2);
     display: flex;
     justify-content: center;
@@ -36,6 +37,24 @@
     cursor: pointer;
     fill: $brand-blue;
     transition: 250ms;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .company {
+    &__wrapper {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .company {
+    margin: 94px 0;
+
+    &__list {
+      flex-wrap: nowrap;
+    }
   }
 }
 
