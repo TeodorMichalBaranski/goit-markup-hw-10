@@ -152,7 +152,16 @@
             <li class="team__wrapper">
               <figure class="team__img">
                 <img
-                  src="images/team/productDesigner.jpg"
+                  srcset="
+                    images/team/productDesigner_mobile.jpg     450w,
+                    images/team/productDesigner_mobile@2x.jpg  900w,
+                    images/team/productDesigner_tablet.jpg     354w,
+                    images/team/productDesigner_tablet@2x.jpg  708w,
+                    images/team/productDesigner_desktop.jpg    270w,
+                    images/team/productDesigner_desktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                  src="images/team/productDesigner_mobile.jpg"
                   width="100%"
                   alt="Mężczyzna z brodą, w okularach i brązowej koszuli"
                 />
