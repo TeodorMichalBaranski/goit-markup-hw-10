@@ -13,8 +13,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
 
-    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -63,8 +63,7 @@
     }
 
     &__contacts {
-      justify-content: flex-end;
-      align-items: center;
+      display: flex;
       flex-direction: column;
     }
 
@@ -170,13 +169,15 @@
       justify-items: center;
       display: flex;
       align-items: center;
+      flex: 1;
     }
 
     &__links {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 261px;
+      max-width: 261px;
+      flex-shrink: 1;
     }
 
     &__contacts {
@@ -185,6 +186,7 @@
       align-items: center;
       gap: 30px;
       flex-direction: row;
+      width: 321px;
     }
 
     &__item {
@@ -203,6 +205,7 @@
       letter-spacing: 0.02em;
       text-decoration: none;
       color: $brand-grey;
+      display: block;
     }
 
     &__icon-contact {

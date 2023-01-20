@@ -4,7 +4,7 @@
   color: rgb(0, 0, 0);
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  margin-right: 83px;
 }
 
 .logo-web {
@@ -13,4 +13,10 @@
 
 .logo-studio {
   color: rgb(255, 255, 255);
+}
+
+@media (min-width: $desktop-size) {
+  .logo {
+    margin-right: 93px;
+  }
 }

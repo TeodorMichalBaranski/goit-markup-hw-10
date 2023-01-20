@@ -2,7 +2,6 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/background_mobile.jpg");
   background-repeat: no-repeat;
-  // background-size: auto 100%;
   background-size: cover;
   background-position: center;
 
@@ -54,10 +53,41 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .billboard {
+    background-image: url("../images/background_mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .billboard {
+    background-image: url("../images/background_tablet.jpg");
+  }
+}
+
+@media (min-width: $tablet-size),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .billboard {
+    background-image: url("../images/background_tablet@2x.jpg");
+  }
+}
+
 @media (min-width: $desktop-size) {
   .billboard {
     max-width: 1600px;
     margin-bottom: 94px;
+    background-image: url("../images/background_desktop.jpg");
+  }
+}
+
+@media (min-width: $desktop-size),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .billboard {
+    background-image: url("../images/background_desktop@2x.jpg");
   }
 }
 
