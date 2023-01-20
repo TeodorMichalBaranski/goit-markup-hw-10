@@ -123,42 +123,6 @@
   }
 }
 
-// @media (min-width: $desktop-size) {
-//   .navigation {
-//     &__contacts {
-//       flex-direction: row;
-//       justify-content: center;
-//       align-items: center;
-//       gap: 30px;
-//       // width: 800px;
-//     }
-
-//     &__wrapper {
-//       display: flex;
-//       align-items: center;
-//     }
-
-//     &__links {
-//       width: 254px;
-//     }
-
-//     &__icon-contact {
-//       // width: 130px;
-//     }
-
-//     &__item {
-//       // display: inline-block;
-//       display: inline;
-//     }
-
-//     &__item--contact {
-//       display: inline-block;
-//       // display: inline;
-//       width: 100px;
-//     }
-//   }
-// }
-
 @media (min-width: $desktop-size) {
   .navigation {
     display: flex;

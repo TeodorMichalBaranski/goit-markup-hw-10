@@ -124,14 +124,14 @@
         <h2 class="header-title services__hidden">Czym się zajmujemy</h2>
         <ul class="services">
           <li class="services__item">
-            <img src="images/service/computer.jpg" alt="Ktoś pisze na kompuetrze" width="370" />
+            <img src="images/service/computer.jpg" alt="Ktoś pisze na kompuetrze" width="100%" />
             <div class="services__text">APLIKACJE KOMPUTEROWE</div>
           </li>
           <li class="services__item">
             <img
               src="images/service/mobile.jpg"
               alt="Ktoś konfiguruje telefon komórkowy"
-              width="370"
+              width="100%"
             />
             <div class="services__text">APLIKACJE MOBILNE</div>
           </li>
@@ -139,7 +139,7 @@
             <img
               src="images/service/tablet.jpg"
               alt="Ktoś wybiera kolor z palety na tablecie"
-              width="370"
+              width="100%"
             />
             <div class="services__text">ROZWIAZANIA GRAFICZNE</div>
           </li>
@@ -196,7 +196,16 @@
             <li class="team__wrapper">
               <figure class="team__img">
                 <img
-                  src="images/team/frontendDeveloper.jpg"
+                  srcset="
+                    images/team/frontendDeveloper_mobile.jpg     450w,
+                    images/team/frontendDeveloper_mobile@2x.jpg  900w,
+                    images/team/frontendDeveloper_tablet.jpg     354w,
+                    images/team/frontendDeveloper_tablet@2x.jpg  708w,
+                    images/team/frontendDeveloper_desktop.jpg    270w,
+                    images/team/frontendDeveloper_desktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                  src="images/team/frontendDeveloper_mobile.jpg"
                   width="100%"
                   alt="Kobieta, bolndynka, w okularach i marynarce"
                 />
@@ -231,7 +240,16 @@
             <li class="team__wrapper">
               <figure class="team__img">
                 <img
-                  src="images/team/marketing.jpg"
+                  srcset="
+                    images/team/marketing_mobile.jpg     450w,
+                    images/team/marketing_mobile@2x.jpg  900w,
+                    images/team/marketing_tablet.jpg     354w,
+                    images/team/marketing_tablet@2x.jpg  708w,
+                    images/team/marketing_desktop.jpg    270w,
+                    images/team/marketing_desktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                  src="images/team/marketing_mobile.jpg"
                   width="100%"
                   alt="Mężczyzna w jasnej koszuli z zarostem"
                 />
@@ -266,7 +284,16 @@
             <li class="team__wrapper">
               <figure class="team__img">
                 <img
-                  src="images/team/secoundFrontendDeveloper.jpg"
+                  srcset="
+                    images/team/secoundFrontendDeveloper_mobile.jpg     450w,
+                    images/team/secoundFrontendDeveloper_mobile@2x.jpg  900w,
+                    images/team/secoundFrontendDeveloper_tablet.jpg     354w,
+                    images/team/secoundFrontendDeveloper_tablet@2x.jpg  708w,
+                    images/team/secoundFrontendDeveloper_desktop.jpg    270w,
+                    images/team/secoundFrontendDeveloper_desktop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                  src="images/team/secoundFrontendDeveloper_mobile.jpg"
                   width="100%"
                   alt="Mężczyzna z brodą, w okularach i czarnej koszulce"
                 />
