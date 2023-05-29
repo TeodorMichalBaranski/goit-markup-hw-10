@@ -1,5 +1,8 @@
 .billboard {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url("../images/background_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,17 +46,13 @@
   &__button:hover,
   &__button:focus {
     transition: 250ms;
-  }
-
-  &__button:hover,
-  &__button:focus {
-    background-color: rgb(245, 244, 250);
-    color: $brand-black;
     cursor: pointer;
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .billboard {
     background-image: url("../images/background_mobile@2x.jpg");
   }
